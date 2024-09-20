@@ -89,13 +89,18 @@ public final class IOStreamRecorder {
                 let writer = self.writer,
                 let input = self.makeWriterInput(mediaType, sourceFormatHint: sampleBuffer.formatDescription),
                 self.isReadyForStartWriting else {
+                print("??????")
                 return
             }
+            
+            print(writer.status)
 
             switch writer.status {
             case .unknown:
-                writer.startWriting()
+                print("startWriting")
+                // writer.startWriting()
                 writer.startSession(atSourceTime: sampleBuffer.presentationTimeStamp)
+                print("end startWriting")
             default:
                 break
             }
@@ -180,6 +185,7 @@ public final class IOStreamRecorder {
                 break
             }
         }
+        print("????")
         var input: AVAssetWriterInput?
         nstry {
             input = AVAssetWriterInput(mediaType: mediaType, outputSettings: outputSettings, sourceFormatHint: sourceFormatHint)
@@ -191,6 +197,7 @@ public final class IOStreamRecorder {
         } _: { exception in
             self.delegate?.recorder(self, errorOccured: .failedToCreateAssetWriterInput(error: exception))
         }
+        print("?????")
         return input
     }
 }
@@ -225,8 +232,10 @@ extension IOStreamRecorder: Running {
                 if let movieFragmentInterval = self.movieFragmentInterval {
                     self.writer?.movieFragmentInterval = CMTime(seconds: movieFragmentInterval, preferredTimescale: 1)
                 }
+                self.writer?.startWriting()
                 self.isRunning.mutate { $0 = true }
             } catch {
+                print("startWriting")
                 self.delegate?.recorder(self, errorOccured: .failedToCreateAssetWriter(error: error))
             }
         }

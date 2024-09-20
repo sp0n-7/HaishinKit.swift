@@ -58,9 +58,12 @@ final class ViewModel: ObservableObject {
     var videoEffectData = ["None", "Monochrome", "Pronoma"]
 
     var frameRateData = ["15.0", "30.0", "60.0"]
+    
+    var recorder = IOStreamRecorder()
 
     func config() {
         rtmpStream = RTMPStream(connection: rtmpConnection)
+        rtmpStream.addObserver(recorder)
         rtmpStream.videoMixerSettings.mode = .offscreen
         rtmpStream.screen.startRunning()
         if let orientation = DeviceUtil.videoOrientation(by: UIDevice.current.orientation) {
@@ -134,6 +137,9 @@ final class ViewModel: ObservableObject {
     }
 
     func startPublish() {
+        Task.detached {
+            self.recorder.startRunning()
+        }
         UIApplication.shared.isIdleTimerDisabled = true
         logger.info(Preference.default.uri!)
 
@@ -143,6 +149,9 @@ final class ViewModel: ObservableObject {
     }
 
     func stopPublish() {
+        
+        self.recorder.stopRunning()
+        
         UIApplication.shared.isIdleTimerDisabled = false
         rtmpConnection.close()
         rtmpConnection.removeEventListener(.rtmpStatus, selector: #selector(rtmpStatusHandler), observer: self)
