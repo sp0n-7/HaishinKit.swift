@@ -1,6 +1,6 @@
 import AVFoundation
 import Foundation
-import HaishinKit
+import HaishinKit194
 
 final class SRTMuxer: IOMuxer {
     var audioFormat: AVAudioFormat? {

@@ -3,7 +3,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "HaishinKit",
+    name: "HaishinKit194",
     platforms: [
         .iOS(.v13),
         .tvOS(.v13),
@@ -12,20 +12,20 @@ let package = Package(
         .macCatalyst(.v14)
     ],
     products: [
-        .library(name: "HaishinKit", targets: ["HaishinKit"]),
-        .library(name: "SRTHaishinKit", targets: ["SRTHaishinKit"])
+        .library(name: "HaishinKit194", targets: ["HaishinKit194"]),
+        .library(name: "SRTHaishinKit194", targets: ["SRTHaishinKit194"])
     ],
     dependencies: [
-        .package(url: "https://github.com/shogo4405/Logboard.git", "2.5.0"..<"2.6.0")
+        .package(url: "https://github.com/shogo4405/Logboard.git", exact: "2.4.1")
     ],
     targets: [
         .binaryTarget(
             name: "libsrt",
             path: "Vendor/SRT/libsrt.xcframework"
         ),
-        .target(name: "SwiftPMSupport"),
-        .target(name: "HaishinKit",
-                dependencies: ["Logboard", "SwiftPMSupport"],
+        .target(name: "SwiftPMSupport194"),
+        .target(name: "HaishinKit194",
+                dependencies: ["Logboard", "SwiftPMSupport194"],
                 path: "Sources",
                 sources: [
                     "Codec",
@@ -37,10 +37,10 @@ let package = Package(
                     "Screen",
                     "Util"
                 ]),
-        .target(name: "SRTHaishinKit",
+        .target(name: "SRTHaishinKit194",
                 dependencies: [
                     "libsrt",
-                    "HaishinKit"
+                    "HaishinKit194"
                 ],
                 path: "SRTHaishinKit"
         )

@@ -1,7 +1,7 @@
 import AVFoundation
 
-#if canImport(SwiftPMSupport)
-import SwiftPMSupport
+#if canImport(SwiftPMSupport194)
+import SwiftPMSupport194
 #endif
 
 protocol MediaLinkDelegate: AnyObject {

@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2945CBBC1B4BE66000104112"
-               BuildableName = "HaishinKit.framework"
-               BlueprintName = "HaishinKit"
+               BuildableName = "HaishinKit194.framework"
+               BlueprintName = "HaishinKit194"
                ReferencedContainer = "container:HaishinKit.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -44,8 +44,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2945CBBC1B4BE66000104112"
-            BuildableName = "HaishinKit.framework"
-            BlueprintName = "HaishinKit"
+            BuildableName = "HaishinKit194.framework"
+            BlueprintName = "HaishinKit194"
             ReferencedContainer = "container:HaishinKit.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -60,8 +60,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2945CBBC1B4BE66000104112"
-            BuildableName = "HaishinKit.framework"
-            BlueprintName = "HaishinKit"
+            BuildableName = "HaishinKit194.framework"
+            BlueprintName = "HaishinKit194"
             ReferencedContainer = "container:HaishinKit.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

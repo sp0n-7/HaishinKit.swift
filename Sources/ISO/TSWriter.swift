@@ -2,8 +2,8 @@ import AVFoundation
 import CoreMedia
 import Foundation
 
-#if canImport(SwiftPMSupport)
-import SwiftPMSupport
+#if canImport(SwiftPMSupport194)
+import SwiftPMSupport194
 #endif
 
 /// The interface an MPEG-2 TS (Transport Stream) writer uses to inform its delegates.

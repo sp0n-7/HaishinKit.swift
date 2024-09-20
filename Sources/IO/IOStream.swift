@@ -1,8 +1,8 @@
 import AVFoundation
 import CoreImage
 import CoreMedia
-#if canImport(SwiftPMSupport)
-import SwiftPMSupport
+#if canImport(SwiftPMSupport194)
+import SwiftPMSupport194
 #endif
 #if canImport(UIKit)
 import UIKit
