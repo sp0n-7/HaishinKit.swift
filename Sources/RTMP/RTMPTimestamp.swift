@@ -21,6 +21,12 @@ struct RTMPTimestamp<T: RTMPTimeConvertible> {
             return 0
         } else {
             var timedelta = (value.seconds - updatedAt) * 1000
+
+            // Clamp timedelta to a minimum of 0 to prevent negative values
+            if timedelta < 0 {
+                timedelta = 0
+            }
+
             timedeltaFraction += timedelta.truncatingRemainder(dividingBy: 1)
             if 1 <= timedeltaFraction {
                 timedeltaFraction -= 1
