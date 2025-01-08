@@ -1,5 +1,5 @@
 import AVFoundation
-import HaishinKit
+import HaishinKit202
 import Logboard
 import UIKit
 

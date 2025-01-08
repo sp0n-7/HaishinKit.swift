@@ -1,10 +1,10 @@
-import HaishinKit
+import HaishinKit202
 @preconcurrency import Logboard
 import MediaPlayer
 import ReplayKit
 import VideoToolbox
 
-nonisolated let logger = LBLogger.with(kHaishinKitIdentifier)
+nonisolated let logger = LBLogger.with(kHaishinKit202Identifier)
 
 @available(iOS 10.0, *)
 final class SampleHandler: RPBroadcastSampleHandler, @unchecked Sendable {
@@ -45,7 +45,7 @@ final class SampleHandler: RPBroadcastSampleHandler, @unchecked Sendable {
          logger.appender = socket
          logger.level = .debug
          */
-        LBLogger.with(kHaishinKitIdentifier).level = .info
+        LBLogger.with(kHaishinKit202Identifier).level = .info
         // mixer.audioMixerSettings.tracks[1] = .default
         isVideoRotationEnabled = false
         Task {

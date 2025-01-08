@@ -2,7 +2,7 @@ import AVFoundation
 import Foundation
 import Testing
 
-@testable import HaishinKit
+@testable import HaishinKit202
 
 @Suite struct AudioRingBufferTests {
     @Test func monoAppendSampleBuffer_920() throws {

@@ -1,7 +1,7 @@
 import AVFoundation
 import Foundation
-import HaishinKit
-import SRTHaishinKit
+import HaishinKit202
+import SRTHaishinKit202
 
 final actor HKStreamSwitcher {
     static let maxRetryCount: Int = 5

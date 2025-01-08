@@ -1,6 +1,6 @@
 import AVFoundation
 import AVKit
-import HaishinKit
+import HaishinKit202
 import UIKit
 
 final class ViewController: UIViewController {
