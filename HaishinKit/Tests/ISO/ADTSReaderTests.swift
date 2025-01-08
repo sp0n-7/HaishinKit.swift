@@ -1,7 +1,7 @@
 import Foundation
 import Testing
 
-@testable import HaishinKit
+@testable import HaishinKit202
 
 @Suite struct ADTSReaderTests {
     @Test func bytes() {

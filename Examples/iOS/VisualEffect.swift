@@ -1,5 +1,5 @@
 import AVFoundation
-import HaishinKit
+import HaishinKit202
 import UIKit
 
 final class PronamaEffect: VideoEffect {

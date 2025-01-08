@@ -1,6 +1,6 @@
 import AVFoundation
 import Cocoa
-import HaishinKit
+import HaishinKit202
 import VideoToolbox
 
 extension NSPopUpButton {

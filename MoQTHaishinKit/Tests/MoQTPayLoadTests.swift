@@ -1,5 +1,5 @@
 import Foundation
-@testable import MoQTHaishinKit
+@testable import MoQTHaishinKit202
 import Testing
 
 @Suite struct MoQTPayLoadTests {

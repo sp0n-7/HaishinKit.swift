@@ -14,7 +14,7 @@ let swiftSettings: [SwiftSetting] = [
 #endif
 
 let package = Package(
-    name: "HaishinKit",
+    name: "HaishinKit202",
     platforms: [
         .iOS(.v13),
         .tvOS(.v13),
@@ -23,9 +23,9 @@ let package = Package(
         .macCatalyst(.v14)
     ],
     products: [
-        .library(name: "HaishinKit", targets: ["HaishinKit"]),
-        .library(name: "SRTHaishinKit", targets: ["SRTHaishinKit"]),
-        .library(name: "MoQTHaishinKit", targets: ["MoQTHaishinKit"])
+        .library(name: "HaishinKit202", targets: ["HaishinKit202"]),
+        .library(name: "SRTHaishinKit202", targets: ["SRTHaishinKit202"]),
+        .library(name: "MoQTHaishinKit202", targets: ["MoQTHaishinKit202"])
     ],
     dependencies: [
         .package(url: "https://github.com/apple/swift-docc-plugin", from: "1.4.3"),
@@ -37,26 +37,26 @@ let package = Package(
             path: "SRTHaishinKit/Vendor/SRT/libsrt.xcframework"
         ),
         .target(
-            name: "HaishinKit",
+            name: "HaishinKit202",
             dependencies: ["Logboard"],
             path: "HaishinKit/Sources",
             swiftSettings: swiftSettings
         ),
         .target(
-            name: "SRTHaishinKit",
-            dependencies: ["libsrt", "HaishinKit"],
+            name: "SRTHaishinKit202",
+            dependencies: ["libsrt", "HaishinKit202"],
             path: "SRTHaishinKit/Sources",
             swiftSettings: swiftSettings
         ),
         .target(
-            name: "MoQTHaishinKit",
-            dependencies: ["HaishinKit"],
+            name: "MoQTHaishinKit202",
+            dependencies: ["HaishinKit202"],
             path: "MoQTHaishinKit/Sources",
             swiftSettings: swiftSettings
         ),
         .testTarget(
-            name: "HaishinKitTests",
-            dependencies: ["HaishinKit"],
+            name: "HaishinKitTests202",
+            dependencies: ["HaishinKit202"],
             path: "HaishinKit/Tests",
             resources: [
                 .process("Asset")

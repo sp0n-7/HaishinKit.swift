@@ -1,6 +1,6 @@
 import AVFoundation
 import Foundation
-@testable import HaishinKit
+@testable import HaishinKit202
 import Testing
 
 @Suite struct RTMPTimestampTests {

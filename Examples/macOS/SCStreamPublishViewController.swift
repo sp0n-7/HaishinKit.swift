@@ -1,6 +1,6 @@
 import AppKit
 import Foundation
-import HaishinKit
+import HaishinKit202
 #if canImport(ScreenCaptureKit)
 @preconcurrency import ScreenCaptureKit
 #endif

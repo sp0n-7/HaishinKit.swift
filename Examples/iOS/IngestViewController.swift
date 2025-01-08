@@ -1,5 +1,5 @@
 import AVFoundation
-import HaishinKit
+import HaishinKit202
 import Photos
 import UIKit
 import VideoToolbox

@@ -2,7 +2,7 @@ import CoreMedia
 import Foundation
 import Testing
 
-@testable import HaishinKit
+@testable import HaishinKit202
 
 @Suite struct CMSampleBufferExtensionTests {
     @Test func isNotSync() {

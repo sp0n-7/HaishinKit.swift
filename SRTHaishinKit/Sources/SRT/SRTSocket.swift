@@ -1,5 +1,5 @@
 import Foundation
-import HaishinKit
+import HaishinKit202
 import libsrt
 import Logboard
 
