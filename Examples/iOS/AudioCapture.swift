@@ -1,6 +1,6 @@
 import AVFoundation
 import Foundation
-import HaishinKit202
+import HaishinKit194
 
 protocol AudioCaptureDelegate: AnyObject {
     func audioCapture(_ audioCapture: AudioCapture, buffer: AVAudioBuffer, time: AVAudioTime)

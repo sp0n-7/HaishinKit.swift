@@ -2,7 +2,7 @@ import AVFoundation
 import Foundation
 import Testing
 
-@testable import HaishinKit202
+@testable import HaishinKit194
 
 @Suite struct AudioCodecTests {
     @Test func encoderCMSampleBuffer44100_1024() {

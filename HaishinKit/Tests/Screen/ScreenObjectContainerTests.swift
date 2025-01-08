@@ -2,7 +2,7 @@ import AVFoundation
 import Foundation
 import Testing
 
-@testable import HaishinKit202
+@testable import HaishinKit194
 
 @ScreenActor
 @Suite struct ScreenObjectContainerTests {

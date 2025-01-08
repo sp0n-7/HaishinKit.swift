@@ -14,7 +14,7 @@ let swiftSettings: [SwiftSetting] = [
 #endif
 
 let package = Package(
-    name: "HaishinKit202",
+    name: "HaishinKit194",
     platforms: [
         .iOS(.v13),
         .tvOS(.v13),
@@ -23,9 +23,9 @@ let package = Package(
         .macCatalyst(.v14)
     ],
     products: [
-        .library(name: "HaishinKit202", targets: ["HaishinKit202"]),
-        .library(name: "SRTHaishinKit202", targets: ["SRTHaishinKit202"]),
-        .library(name: "MoQTHaishinKit202", targets: ["MoQTHaishinKit202"])
+        .library(name: "HaishinKit194", targets: ["HaishinKit194"]),
+        .library(name: "SRTHaishinKit194", targets: ["SRTHaishinKit194"]),
+        .library(name: "MoQTHaishinKit194", targets: ["MoQTHaishinKit194"])
     ],
     dependencies: [
         .package(url: "https://github.com/apple/swift-docc-plugin", from: "1.4.3"),
@@ -37,26 +37,26 @@ let package = Package(
             path: "SRTHaishinKit/Vendor/SRT/libsrt.xcframework"
         ),
         .target(
-            name: "HaishinKit202",
+            name: "HaishinKit194",
             dependencies: ["Logboard"],
             path: "HaishinKit/Sources",
             swiftSettings: swiftSettings
         ),
         .target(
-            name: "SRTHaishinKit202",
-            dependencies: ["libsrt", "HaishinKit202"],
+            name: "SRTHaishinKit194",
+            dependencies: ["libsrt", "HaishinKit194"],
             path: "SRTHaishinKit/Sources",
             swiftSettings: swiftSettings
         ),
         .target(
-            name: "MoQTHaishinKit202",
-            dependencies: ["HaishinKit202"],
+            name: "MoQTHaishinKit194",
+            dependencies: ["HaishinKit194"],
             path: "MoQTHaishinKit/Sources",
             swiftSettings: swiftSettings
         ),
         .testTarget(
-            name: "HaishinKitTests202",
-            dependencies: ["HaishinKit202"],
+            name: "HaishinKitTests194",
+            dependencies: ["HaishinKit194"],
             path: "HaishinKit/Tests",
             resources: [
                 .process("Asset")

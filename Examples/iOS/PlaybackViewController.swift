@@ -1,7 +1,7 @@
 import AVFoundation
 import AVKit
 import Foundation
-import HaishinKit202
+import HaishinKit194
 import UIKit
 
 final class PlaybackViewController: UIViewController {
