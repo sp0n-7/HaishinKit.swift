@@ -1,6 +1,6 @@
 import Combine
 import Foundation
-import HaishinKit202
+import HaishinKit194
 import libsrt
 
 /// An actor that provides the interface to control a two-way SRT connection.

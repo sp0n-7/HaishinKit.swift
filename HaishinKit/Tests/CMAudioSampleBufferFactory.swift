@@ -1,5 +1,5 @@
 import AVFoundation
-@testable import HaishinKit202
+@testable import HaishinKit194
 
 enum CMAudioSampleBufferFactory {
     static func makeSilence(_ sampleRate: Double = 44100, numSamples: Int = 1024, channels: UInt32 = 1, presentaionTimeStamp: CMTime = .zero) -> CMSampleBuffer? {

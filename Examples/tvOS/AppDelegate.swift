@@ -1,5 +1,5 @@
 import AVFAudio
-import HaishinKit202
+import HaishinKit194
 import Logboard
 import UIKit
 

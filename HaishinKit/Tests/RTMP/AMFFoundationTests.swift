@@ -1,7 +1,7 @@
 import Foundation
 import Testing
 
-@testable import HaishinKit202
+@testable import HaishinKit194
 
 @Suite struct AMFFoundationTests {
     static let hello: String = "<a>hello</a>"
